@@ -14,6 +14,7 @@ function Home() {
 
                 <BotaoHome to='options'>Opções</BotaoHome>
 
+                {/* <a href='./play.tsx'>clique aqui</a> */}
             </ContainerFlex>
         </>
     )

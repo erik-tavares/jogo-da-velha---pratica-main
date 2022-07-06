@@ -12,26 +12,26 @@ export default function CustomAppBar() {
 
   const location = useLocation()
   console.log(location.pathname);
-  
+
 
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
           {location.pathname !== "/" &&
-              <IconButton
-                size="large"
-                edge="start"
-                color="inherit"
-                aria-label="menu"
-                sx={{ mr: 2 }}
-              >
-                <CustomLink isAppBar to='' >
-                  <ArrowBackIcon />
-                </CustomLink>
-              </IconButton>
-           }
-          <Typography variant="h6" component="div" sx={{ position:'absolute', left: '50%', transform: "translateX(-50%)" }}>
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={{ mr: 2 }}
+            >
+              <CustomLink isAppBar to='' >
+                <ArrowBackIcon />
+              </CustomLink>
+            </IconButton>
+          }
+          <Typography noWrap variant="h6" component="div" sx={{ position: 'absolute', left: '50%', transform: "translateX(-50%)" }}>
             Meu jogo da memória
           </Typography>
         </Toolbar>

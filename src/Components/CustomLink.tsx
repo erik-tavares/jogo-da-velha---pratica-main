@@ -2,7 +2,7 @@ import { styled } from "@mui/material";
 import { ReactElement } from "react";
 import { Link } from "react-router-dom";
 
-type CustomLinkProps ={
+type CustomLinkProps = {
     to: string;
     children: string | ReactElement
     isAppBar?: boolean
@@ -12,24 +12,24 @@ type StyledLinkProps = {
     isAppBar?: boolean
 }
 
-const StyledLink = styled(Link)<StyledLinkProps>`
+const StyledLink = styled(Link) <StyledLinkProps>`
 width: 100%;
-padding: ${props=> props.isAppBar ? '0px' : '8px 16px'};
+padding: ${props => props.isAppBar ? '0px' : '8px 16px'};
 text-decoration: none;
-color: black;
+color: ${props => props.theme.palette.text.primary};
 `
 
 
 export default function CustomLink(props: CustomLinkProps) {
-    
-    return(
+
+    return (
         <>
-                <StyledLink 
+            <StyledLink
                 to={`/${props.to}`}
                 isAppBar={props.isAppBar}
-                >
-                    {props.children}
-                </StyledLink>
+            >
+                {props.children}
+            </StyledLink>
         </>
     )
 }

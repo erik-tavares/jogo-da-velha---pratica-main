@@ -1,4 +1,4 @@
-import { Container } from "@mui/material"
+import { colors, Container, useTheme } from "@mui/material"
 import { ReactElement } from "react"
 
 type ContainerFlexProps = {
@@ -6,18 +6,22 @@ type ContainerFlexProps = {
 }
 
 function ContainerFlex(props: ContainerFlexProps) {
-    
-    return(
+
+    const theme = useTheme()
+    console.log(theme.palette.background.default);
+
+
+    return (
         <>
-            <Container 
-            maxWidth="md" 
-            disableGutters sx={{
-                height: 'inherit',
-                display: 'flex', 
-                justifyContent: 'center',
-                alignItems: 'center',
-                flexDirection: 'column',
-                gap: '16px'
+            <Container
+                maxWidth="md"
+                disableGutters sx={{
+                    height: 'inherit',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    flexDirection: 'column',
+                    gap: '16px',
                 }}>
                 {props.children}
             </Container>

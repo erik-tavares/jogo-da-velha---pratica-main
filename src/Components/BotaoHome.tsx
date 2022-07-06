@@ -7,18 +7,18 @@ type BotaoHomeProps = {
 }
 
 function BotaoHome(props: BotaoHomeProps) {
-    
+
     return (
-            <Button 
-            sx={{width: '50%', padding: 0}} 
+        <Button
+            sx={{ width: '50%', padding: 0 }}
             variant="contained"
-            >
-                <CustomLink 
+        >
+            <CustomLink
                 to={props.to}
-                >
-                    {props.children}
-                </CustomLink>
-            </Button>
+            >
+                {props.children}
+            </CustomLink>
+        </Button>
     )
 }
 
