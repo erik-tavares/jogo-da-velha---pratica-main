@@ -20,17 +20,22 @@ const localStorageRows: Row[] = [
         tempo: '2:00'
     },
     {
-        nome: "Lola Pakita",
+        nome: "Anderson",
         jogadas: 12,
         tempo: '2:15'
     },
     {
-        nome: "Zack",
+        nome: "Arthur",
         jogadas: 15,
         tempo: '2:45'
     },
     {
-        nome: "Zack",
+        nome: "Erni",
+        jogadas: 15,
+        tempo: '2:45'
+    },
+    {
+        nome: "Rose",
         jogadas: 15,
         tempo: '2:45'
     }
